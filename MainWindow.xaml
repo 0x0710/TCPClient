@@ -1,0 +1,23 @@
+﻿<Window x:Class="TCPchat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCPchat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="537" Width="1016">
+    <Grid Background="#FFEFEFEF">
+        <ListBox x:Name="Users" HorizontalAlignment="Left" Height="380" Margin="10,37,0,0" VerticalAlignment="Top" Width="127" />
+        <Label x:Name="UsersL" Content="Пользователи" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label x:Name="HistoryL" Content="История чата" HorizontalAlignment="Left" Margin="168,10,0,0" VerticalAlignment="Top" FontSize="14" />
+        <TextBlock x:Name="ServerSettings" HorizontalAlignment="Left" Height="116" Margin="832,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Background="White" />
+        <Label x:Name="SettingsL" Content="Инф-я сервера" HorizontalAlignment="Left" Margin="832,10,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Button x:Name="Connect" Content="Подключиться" HorizontalAlignment="Left" Height="45" Margin="832,315,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Click="Connect_Click" />
+        <Button x:Name="Disconnect" Content="Отключиться" HorizontalAlignment="Left" Height="45" Margin="832,372,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Click="Disconnect_Click" />
+        <TextBox x:Name="SendBox" HorizontalAlignment="Left" Height="44" Margin="168,434,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="630" FontSize="16" />
+        <Button x:Name="Send" Content="Отправить" HorizontalAlignment="Left" Height="44" Margin="832,434,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Click="Send_Click" />
+        <Label x:Name="Nick" Content="Никнейм" HorizontalAlignment="Left" Margin="832,158,0,0" VerticalAlignment="Top" FontSize="14" />
+        <TextBox x:Name="NickBox" HorizontalAlignment="Left" Margin="832,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Height="35" FontSize="14"/>
+        <TextBox x:Name="ChatHistory" HorizontalAlignment="Left" Margin="168,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="630" Height="380" FontSize="14" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+    </Grid>
+</Window>
